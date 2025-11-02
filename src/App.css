@@ -1,0 +1,107 @@
+header {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: rgb(233, 1, 1);
+  max-height: 16vh;
+}
+
+h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+}
+.ticket-slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  width: 90vw;
+  max-width: 400px;
+}
+
+.ticket-slider {
+  display: flex;
+  justify-content: center;
+  background-color: #a60017;
+  padding: 6px;
+  border-radius: 30px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.ticket-slider .tab {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, font-weight 0.2s;
+}
+
+.ticket-slider .tab.active {
+  background-color: #e2001a;
+  font-weight: 600;
+}
+
+.identiti-card-container {
+  width: 90vw;
+  max-width: 400px;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.identiti-card-top-section {
+  display: flex;
+  height: 25%;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(141, 3, 3);
+  border-radius: 10px 10px 0px 0px;
+}
+.identiti-card-top-section p {
+  margin: 2px;
+}
+.identiti-card-top-section .name {
+  font-weight: 800;
+}
+.identiti-card-bottom-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* zwei Spalten */
+  height: 75%;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 0px 0px 10px 10px;
+  gap: 10px;
+}
+
+.left-cell {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right-cell {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.images,
+.profile-picture {
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+  max-width: 180px;
+}
