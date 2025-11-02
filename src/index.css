@@ -1,12 +1,22 @@
 :root {
   font-family: "Helvetica";
   color: rgba(255, 255, 255, 0.87);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
   background: linear-gradient(
     180deg,
     rgba(233, 1, 1, 1) 0%,
-    rgba(21, 21, 21, 1) 28%,
+    rgba(21, 21, 21, 1) 10%,
     rgba(21, 21, 21, 1) 100%
   );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
