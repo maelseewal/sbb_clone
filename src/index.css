@@ -2,23 +2,11 @@
   font-family: "Helvetica";
   color: rgba(255, 255, 255, 0.87);
   background-color: rgb(21, 21, 21);
-  --safe-area-top-color: rgb(233, 1, 1); /* hier deine Farbe */
 }
 
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-}
-
-body::before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: env(safe-area-inset-top);
-  background-color: var(--safe-area-top-color);
-  z-index: 9999;
+  background-color: rgb(235, 0, 0);
 }

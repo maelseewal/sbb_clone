@@ -4,30 +4,36 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  background-color: rgb(233, 1, 1);
-  max-height: 16vh;
+  background-color: rgb(235, 0, 0);
+  max-height: 20vh;
 }
 
 h1 {
   color: white;
   font-weight: 100;
   font-size: 20px;
+  margin: 0;
 }
 .ticket-slider-container {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
-  width: 90vw;
+  margin-top: 12px;
+  width: 96vw;
   max-width: 400px;
+  height: 45px;
 }
 
 .ticket-slider {
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: #a60017;
+
+  align-items: center;
+
+  background-color: rgb(197, 0, 24);
   padding: 6px;
   border-radius: 30px;
-  width: 80%;
+  width: 100%;
   max-width: 400px;
 }
 
@@ -41,67 +47,167 @@ h1 {
   font-weight: 500;
   border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s, font-weight 0.2s;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
 }
 
 .ticket-slider .tab.active {
-  background-color: #e2001a;
   font-weight: 600;
+  color: #fff;
+}
+.slider-indicator {
+  position: absolute;
+
+  height: 110%;
+  background-color: rgb(235, 0, 0);
+  border: solid 1px rgb(161, 0, 19);
+  border-radius: 30px;
+  z-index: 1;
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
 }
 
-.identiti-card-container {
-  width: 90vw;
+/* Card Container */
+.card-container {
+  width: 96vw;
+  height: 50vh;
   max-width: 400px;
-  min-height: 25vh;
+  margin-top: 12px;
+  position: relative;
+  background-color: #282828;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Slider */
+.card-slider {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* Header */
+.card-header {
+  background-color: rgb(197, 20, 22);
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 10px;
-}
-.identiti-card-top-section {
-  display: flex;
-  height: 25%;
-  flex-direction: column;
-  justify-content: left;
   position: relative;
+}
+
+.card-header-title {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.card-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 0px;
+}
+
+.card-header-info .name {
   margin: 0;
-  padding: 10px;
-  background-color: rgb(141, 3, 3);
-  border-radius: 10px 10px 0px 0px;
-}
-.identiti-card-top-section p {
-  margin: 2px;
-}
-.identiti-card-top-section .name {
+  font-size: 16px;
   font-weight: 800;
 }
-.identiti-card-bottom-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* zwei Spalten */
-  height: 75%;
+
+.card-header-info .birth {
   margin: 0;
-  padding: 10px;
-  background-color: rgb(40, 40, 40);
-  border-radius: 0px 0px 10px 10px;
-  gap: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0px;
 }
 
-.left-cell {
+/* Pages */
+.card-page {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content.row {
+  box-sizing: border-box;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.page-content.column {
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.qr-code {
+  object-fit: contain;
+  width: 100%;
+  max-width: 180px;
+  height: auto; /* Höhe passt sich proportional an */
+  border-radius: 8px;
+  margin: 0; /* zentriert innerhalb der Grid-Zelle */
+}
+
+.profile-picture {
+  object-fit: contain;
+  width: auto;
+  height: 180px;
+  border-radius: 8px;
+  margin: 0; /* zentriert innerhalb der Grid-Zelle */
+}
+
+/* Info Page */
+.card-info .label {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.card-footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Page Indicators */
+.page-indicators {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 5px;
 }
 
-.right-cell {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #666;
+  transition: background-color 0.3s;
 }
 
-.images,
-.profile-picture {
-  height: 80%;
-  width: auto;
-  object-fit: contain;
-  max-width: 180px;
+.indicator.active {
+  background-color: #fff;
 }
