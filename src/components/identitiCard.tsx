@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import qrCode from "../assets/qrcode.png";
 import profilePicture from "../assets/profilePicture.png";
+import safeImg from "../assets/safeImg.jpg";
 import "../App.css";
 
 export default function SwissPassCard() {
@@ -57,7 +58,7 @@ export default function SwissPassCard() {
         onTouchEnd={handleTouchEnd}
       >
         <div className="card-header">
-          <div className="card-header-title">SwissPass</div>
+          <img className="card-header-title" src={safeImg} alt="safeImg" />
           <div className="card-header-info">
             <p className="name">Seewald</p>
             <p className="name">Maël</p>
@@ -88,14 +89,12 @@ export default function SwissPassCard() {
             ) : (
               <div className="page-content column">
                 <div className="card-info">
-                  <p className="label">Karteninhaber:</p>
-                  <p>Maël Seewald</p>
-                  <p>Geboren: 23.11.2008</p>
-                  <p>Geschlecht: M</p>
-                </div>
-                <div className="card-footer">
-                  <p>SwissPass AG</p>
-                  <p>Gültig für öffentliche Verkehrsmittel</p>
+                  <p className="label">Kundennummer</p>
+                  <p className="info">084-061-483-1</p>
+                  <p className="label">SwissPass Mobile Nr.</p>
+                  <p className="info">M43-978-190-865</p>
+                  <p className="label">SwissPass Karte Nr.</p>
+                  <p className="info">S69-986-590-046</p>
                 </div>
               </div>
             )}
