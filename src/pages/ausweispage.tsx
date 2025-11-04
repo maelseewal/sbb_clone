@@ -4,7 +4,7 @@ import TicketSlider from "../components/ticketSlider";
 
 export default function AusweisPage() {
   return (
-    <div className="content">
+    <div className="app-container">
       <header>
         <h1>Billette & Abos</h1>
         <TicketSlider />
