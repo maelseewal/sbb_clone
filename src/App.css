@@ -398,11 +398,12 @@ h1 {
   overscroll-behavior: none;
 }
 .scrollView::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 nav{
-  height: 10vh;
+  height: 12vh;
   width: 100vw;
+  background-color: rgb(33, 33, 33);
 }
 nav img{
   width: 100%;
