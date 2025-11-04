@@ -5,11 +5,13 @@
   overflow: hidden;
   touch-action: none;
 }
+
 .content {
   background-color: rgb(0, 0, 0);
   width: 100%;
   height: 100%;
 }
+
 header {
   display: flex;
   justify-content: top;
@@ -28,6 +30,7 @@ h1 {
   font-size: 20px;
   margin: 0;
 }
+
 .ticket-slider-container {
   display: flex;
   justify-content: center;
@@ -70,6 +73,7 @@ h1 {
   font-weight: 600;
   color: #fff;
 }
+
 .slider-indicator {
   position: absolute;
 
@@ -86,14 +90,16 @@ h1 {
 /* Card Container */
 .card-container {
   width: 96vw;
-  height: 50vh;
+  height: auto;
   max-width: 400px;
   margin-top: 12px;
+  margin-bottom: 16px;
   position: relative;
   background-color: #282828;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Slider */
 .card-slider {
@@ -198,6 +204,7 @@ h1 {
   font-weight: 100;
   font-size: 14px;
 }
+
 .card-info .info {
   margin: 0;
   margin-top: 2px;
@@ -225,4 +232,144 @@ h1 {
 
 .indicator.active {
   background-color: #fff;
+}
+
+/* Container */
+.ticket-container {
+  min-height: 100vh;
+  background-color: #000000;
+  padding: 1rem;
+}
+
+.ticket-wrapper {
+  max-width: 28rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* No Tickets Card */
+.no-tickets-card {
+  position: relative;
+  background: linear-gradient(to bottom, #27272a, #18181b);
+  border-radius: 1.5rem;
+  padding: 10px;
+  border: 1px solid #3f3f46;
+}
+
+.no-tickets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  width: 96vw;
+  max-width: 400px;
+  box-sizing: border-box;
+
+}
+
+.no-tickets-content img {
+  width: 50px;
+  height: auto;
+}
+
+/* Phone Icon */
+.phone-icon-wrapper {
+  position: relative;
+}
+
+.phone-svg {
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.phone-shadow {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8rem;
+  height: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 9999px;
+  filter: blur(8px);
+}
+
+.no-tickets-text {
+  color: #b2b2b2;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+/* Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 2rem;
+  font-weight: 300;
+  padding: 0 0.5rem;
+  margin: 0;
+}
+
+/* Abo Button */
+.abo-button {
+  width: 100%;
+  background-color: #27272a;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.abo-button:hover {
+  background-color: #3f3f46;
+}
+
+.abo-button-text {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+}
+
+.chevron-icon {
+  color: #ffffff;
+}
+
+/* Add Abo Button */
+.add-abo-button {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #52525b;
+  border-radius: 9999px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.add-abo-button:hover {
+  border-color: #71717a;
+}
+
+.add-abo-text {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
 }
