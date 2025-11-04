@@ -1,0 +1,8 @@
+{
+  "name": "sbb-app",
+  "short_name": "SBB Mobile",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ff0000",
+  "theme_color": "#ff0000"
+}
