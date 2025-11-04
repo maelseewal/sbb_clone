@@ -8,30 +8,37 @@
 
 /* Hauptcontainer */
 .app-container {
-  width: 96vw;
+  width: 100vw;
   max-width: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+    background: linear-gradient(180deg, rgba(235, 0, 0, 1) 0%, rgba(214, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%);  
+
 
 }
 
 
 
 /* Header */
-header {
+main {
   display: flex;
   justify-content: top;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  background-color: rgb(235, 0, 0);
-  max-height: 20vh;
+  width: 96%;
   margin: 0;
   padding: 0;
-}
 
+}
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 h1 {
   color: white;
   font-weight: 100;

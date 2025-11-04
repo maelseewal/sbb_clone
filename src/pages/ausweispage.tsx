@@ -5,12 +5,14 @@ import TicketSlider from "../components/ticketSlider";
 export default function AusweisPage() {
   return (
     <div className="app-container">
-      <header>
+      <main>
+        <div className="header">
         <h1>Billette & Abos</h1>
         <TicketSlider />
         <IdentitiCard />
+        </div>
         <TicketCard />
-      </header>
+      </main>
     </div>
   );
 }
