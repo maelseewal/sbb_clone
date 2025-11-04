@@ -2,8 +2,6 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  touch-action: none;
 }
 
 /* Hauptcontainer */
@@ -15,8 +13,6 @@
   flex-direction: column;
   align-items: center;
     background: linear-gradient(180deg, rgba(235, 0, 0, 1) 0%, rgba(214, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%);  
-
-
 }
 
 
@@ -246,7 +242,6 @@ h1 {
 .ticket-container {
   min-height: 100vh;
   background-color: #000000;
-  padding: 1rem;
   width: 100%;
 }
 
@@ -381,3 +376,11 @@ h1 {
   line-height: 1.75rem;
   font-weight: 300;
 }
+.scrollView {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;  
+} 
