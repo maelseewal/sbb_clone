@@ -20,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-    background: linear-gradient(180deg, rgba(235, 0, 0, 1) 0%, rgba(214, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%);  
+    background: linear-gradient(180deg, rgba(235, 0, 0, 1) 0%, rgba(214, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 15%);  
 }
 
 
@@ -117,7 +117,7 @@ h1 {
 /* Slider */
 .card-slider {
   width: 100%;
-  height: 37vh;
+  height: 34vh;
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -394,8 +394,8 @@ h1 {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
+  overscroll-behavior: none;
 }
-
 .scrollView::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
