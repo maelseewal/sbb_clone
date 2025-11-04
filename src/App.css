@@ -388,6 +388,7 @@ h1 {
   width: 100%;
   flex: 1 1 auto;
   min-height: 0;
+  height: 40vh;
   padding: 0;
   margin: 0;
   overflow-y: auto;
@@ -398,4 +399,11 @@ h1 {
 }
 .scrollView::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+}
+nav{
+  height: 10vh;
+  width: 100vw;
+}
+nav img{
+  width: 100%;
 }

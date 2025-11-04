@@ -1,3 +1,4 @@
+import BottomNav from "../components/bottomNav";
 import IdentitiCard from "../components/identitiCard";
 import TicketCard from "../components/ticketCard";
 import TicketSlider from "../components/ticketSlider";
@@ -14,6 +15,7 @@ export default function AusweisPage() {
         <div className="scrollView">
           <TicketCard />
         </div>
+        <BottomNav />
       </main>
     </div>
   );
